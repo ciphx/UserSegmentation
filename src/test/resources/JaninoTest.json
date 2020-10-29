@@ -1,0 +1,32 @@
+[
+  {
+    "rule_path" : "a && (b && (c && d))",
+    "map" : {
+      "a" : true,
+      "b" : false,
+      "c" : true,
+      "d" : true
+    },
+    "expectedResult" : false
+  },
+  {
+    "rule_path" : "a && (b && (c || d))",
+    "map" : {
+      "a" : true,
+      "b" : true,
+      "c" : true,
+      "d" : false
+    },
+    "expectedResult" : true
+  },
+  {
+    "rule_path" : "a || (b && (c && d))",
+    "map" : {
+      "a" : false,
+      "b" : true,
+      "c" : true,
+      "d" : true
+    },
+    "expectedResult" : true
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "rules": {
+    "a": {
+      "attribute": "gender",
+      "operator": "EQ",
+      "value": "female"
+    },
+    "b": {
+      "attribute": "preference_food",
+      "operator": "EQ",
+      "value": "red-meat"
+    },
+    "c": {
+      "attribute": "order_count",
+      "operator": "GT",
+      "value": "100"
+    }
+  },
+  "rule_path": "a && (b || c)"
+
+}
