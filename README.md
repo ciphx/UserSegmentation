@@ -1,3 +1,5 @@
+**code is in master branch**
+
 **OBJECTIVE** : 
 
 To segregate users into one or more groups based on their 
